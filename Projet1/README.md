@@ -44,31 +44,31 @@ Base de données transformé :
 - Simplification du modèle avec la fonction step()
 - Indicateur de fiabilité : AUC de 0,7327 > 0,5. Plutot bon
 
-### Algortihme 2 : Arbre de régression
+### Algorithme 2 : Arbre de régression
 - Entrée : Utilisation de caractéristiques numériques + character
 - Sorties : Arbre de décision selon des critères
 - Élagage de l'arbre avec CP = 0,02 qui minimise le taux d'erreur
 - Indicateur de fiabilité : AUC de 0,5953 > 0,50. Pas terrible
 
-### Algortihme 3 : Foret aléatoire
+### Algorithme 3 : Foret aléatoire
 - Entrée : Utilisation de caractéristiques numériques + character 
 - Sorties : Généralisation de plusieurs arbres de regression
 - Choix du nombres d'arbre : trees = 80 qui minimise le taux d'erreur
 - Indicateur de fiabilité : AUC de 0,6209. Mieux mais toujours pas terrible
 
 
-### Algortihme 4 : Naive Baysien 
+### Algorithme 4 : Naive Baysien 
 - Entrée : Utilisation de caractéristiques numériques + character
 - Sorties : Prédiction des résultats entre une équipe A et une équipe B
 - Correcteur de Laplace = 1
 - Indicateur de fiabilité : AUC de 0,717 > 0,50. Plutot bon
 
 
-### Algortihme 5 : KNN
+### Algorithme 5 : KNN
 - Entrée : Selection des caractéristiques uniquement numériques + Target en numérque (H_Outcome)
 - Sortie : Prédiction des résultats entre une équipe A et une équipe B
 - Centrer et réduire les données pour remettre à l'échelle
 - Choix du nombre de voisins : k = 29 qui représente le plus faible taux d'erreur
 - 
-### Algortihme 6 : Réseau de neuronnes
+### Algorithme 6 : Réseau de neuronnes
 
