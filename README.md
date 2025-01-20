@@ -1,5 +1,7 @@
 # Portfolio de mes projets 👨‍🎓
 
+(Je suis entrain de mettre à jour mon github et mes projets)
+
 Bienvenue sur mon portfolio ! 🎉
 
 Ce dépôt regroupe les différents projets d'analyse de données que j'ai réalisés durant mon master en Data Marketing à l'Université Panthéon-Sorbonne. Vous y trouverez des projets finalisés accompagnés de leur code source en **Python** et **R**
