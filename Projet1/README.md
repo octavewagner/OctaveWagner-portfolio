@@ -69,6 +69,6 @@ Base de données transformé :
 - Sortie : Prédiction des résultats entre une équipe A et une équipe B
 - Centrer et réduire les données pour remettre à l'échelle
 - Choix du nombre de voisins : k = 29 qui représente le plus faible taux d'erreur
-- 
+  
 ### Algorithme 6 : Réseau de neuronnes
 
