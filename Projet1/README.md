@@ -84,4 +84,21 @@ Base de données transformée :
 
 ![Robot](https://github.com/user-attachments/assets/5babef01-3182-4432-bdb9-d5550877509d)
 
+### Compétences Techniques Acquises 
+
+✅ Collecte de données à partir d'un site internet (WebScrapping).
+
+✅ Stockage et manipulation des données avec R dans l'IDE RStudio
+
+✅ Visualisation de données avec ggplot2
+
+✅ Connaissances des différents algorithmes en Machine Learning
+
+✅ Évaluation et interprétation des modèles sorties algorithmes
+
+✅ Présentation du projet devant une audience
+
+### Conclusion 📊
+Ce projet démontre ma capacité à gérer un projet de Machine Learning, depuis la collecte des données jusqu'à sa mise en pratique. 
+Mes compétences techniques en collecte, manipulation de données et modélisation prédictive sont utilisés à travers les différents étape de ce projet.
 
