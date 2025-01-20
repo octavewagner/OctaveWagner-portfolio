@@ -81,6 +81,7 @@ Base de données transformée :
 - Construction d'une fonction prédictive avec le logit comme algorithme (meilleur AUC)
 - Sélection d'une équipe et d'une équipe adversaire
 - Estimation du pourcentage de succès de l'équipe hote
-  
+
+![Robot](https://github.com/user-attachments/assets/5babef01-3182-4432-bdb9-d5550877509d)
 
 
