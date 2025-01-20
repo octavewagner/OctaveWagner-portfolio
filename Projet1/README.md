@@ -31,7 +31,7 @@ La construction du modèle s'est faite sur les différentes statistiques sur une
 Base de données initiale : 
 ![BdD NBA](https://github.com/user-attachments/assets/0c61a28e-bc65-4d91-9003-df157d5c9d9f)
 
-Base de données transformé : 
+Base de données transformée : 
 ![BdD NBA final](https://github.com/user-attachments/assets/ff0ac821-9434-47db-818c-d8ee21c2b4dc)
 
 ### Stockage et Nettoyage des Données
