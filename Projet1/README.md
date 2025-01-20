@@ -39,26 +39,26 @@ Base de données transformé :
 
 ### Algortihme 1 : Logit
 
-- Entrées : Utilisation de variables numériques
+- Entrées : Utilisation de caractéristiques numériques
 - Sorties : Prédiction des résultats entre une équipe A et une équipe B
 - Simplification du modèle avec la fonction step()
 - Indicateur de fiabilité : AUC de 0,7327 > 0,5. Plutot bon
 
 ### Algortihme 2 : Arbre de régression
-- Entrée : Utilisation de variables numériques
+- Entrée : Utilisation de caractéristiques numériques
 - Sorties : Arbre de décision selon des critères
 - Élagage de l'arbre en cherchant le meilleur CP (complexity parameter) possible.
 - Indicateur de fiabilité : AUC de 0,5953 > 0,50. Pas terrible
 
 ### Algortihme 3 : Foret aléatoire
-- Entrée : Utilisable de variables numériques
+- Entrée : Utilisation de caractéristiques numériques
 - Sorties : Généralisation de plusieurs arbres de regression
 - Choix du nombres d'arbre : minimiser le taux d'érreur
 - Indicateur de fiabilité : AUC de 0,6209. Mieux mais toujours pas terrible
 
 
 ### Algortihme 4 : Naive Baysien
-- Entrée : Utilisable de variables numériques
+- Entrée : Utilisation de caractéristiques numériques
 - Sorties : Prédiction des résultats entre une équipe A et une équipe B
 - Correcteur de Laplace = 1
 - Indicateur de fiabilité : AUC de 0,717 > 0,50. Plutot bon
