@@ -6,13 +6,13 @@ Ce dépôt regroupe les différents projets d'analyse de données que j'ai réal
 
 ## 🌟 Projets disponibles
 
-### 1.Modèle prédictif sur les équipes NBA 21-22
+### Projet 1.Modèle prédictif sur les équipes NBA 21-22
 - **Description :** L'objectif de ce projet est de prédire les pourcentages de succès d'une équipe A contre une équipe B. 
 Dans ce but, moi et mon groupe, nous avons élaborer puis comparer plusieurs modèles d'apprentissage automatiques entre eux.
 À la fin, après avoir retenu le meilleur modèle, nous avons effectué une simulation.
 - **Langage utilisé :** R
 
-### 2. Analyse des biens immobilers aux États Unis
+### Projet 2. Analyse des biens immobilers aux États Unis
 - **Description :** 
 - **Langages utilisés :** Python
 
