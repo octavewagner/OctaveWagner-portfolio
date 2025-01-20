@@ -26,3 +26,6 @@ La construction du modèle s'est faite sur les différentes statistiques sur une
 - Collecte des données en utilisant le tuto suivant : https://predictivehacks.com/how-to-build-a-predictive-model-for-nba-games/
 1. Web scrapping sur le site de la ESPN (résultats NBA)
 2. Transformation des données en indicateurs pertinents
+
+![BdD NBA](https://github.com/user-attachments/assets/0c61a28e-bc65-4d91-9003-df157d5c9d9f)
+
