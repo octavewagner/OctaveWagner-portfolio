@@ -53,7 +53,7 @@ Base de données transformé :
 ### Algortihme 3 : Foret aléatoire
 - Entrée : Utilisation de caractéristiques numériques + character 
 - Sorties : Généralisation de plusieurs arbres de regression
-- Choix du nombres d'arbre : tress = 80 qui minimise le taux d'erreur
+- Choix du nombres d'arbre : trees = 80 qui minimise le taux d'erreur
 - Indicateur de fiabilité : AUC de 0,6209. Mieux mais toujours pas terrible
 
 
