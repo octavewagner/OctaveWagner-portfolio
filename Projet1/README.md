@@ -78,8 +78,9 @@ Base de données transformée :
 - Indicateur de fiabilité : AUC de 0,6671 > 0,50. Moyen
 
 ### Le Robot prédictif
-
-
+- Construction d'une fonction prédictive avec le logit comme algorithme (meilleur AUC)
+- Sélection d'une équipe et d'une équipe adversaire
+- Estimation du pourcentage de succès de l'équipe hote
   
 
 
