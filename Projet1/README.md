@@ -1,4 +1,4 @@
-# Projet 1 : Modèle prédictif en NBA sur la saison 21-22
+# Projet 1 : Modèle prédictif en NBA sur la saison 21-22 🏀
 
 ## Introduction
 Dans le cadre de mon master à l'Université Panthéon - Sorbonne, j'ai réalisé un projet complet de Machine Learning visant à prédire le pourcentage de victoire d'une équipe NBA versus une autre, toute conférence confondue. Voir le PDF pour plus de détails
