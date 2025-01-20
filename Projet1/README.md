@@ -11,7 +11,7 @@ Ce projet a été conçu pour démontrer mes compétences en collecte de donnée
 L'objectif principal de ce projet était de construire l'un des meilleurs modèles prédictifs possibles. 
 J'ai comparé 6 algorithmes différents sur la base d'un indicateur de fiabilité : 
 
-- Régression linéaire
+- Régression logistique
 - Arbre de régression
 - Fôret aléatoire
 - Naive Baysien
@@ -39,33 +39,36 @@ Base de données transformé :
 
 ### Algortihme 1 : Logit
 
-- Entrées : Utilisation de caractéristiques numériques
+- Entrées : Utilisation de caractéristiques numériques. Transformation automatiques des variables "character" avec la fonction glm()
 - Sorties : Prédiction des résultats entre une équipe A et une équipe B
 - Simplification du modèle avec la fonction step()
 - Indicateur de fiabilité : AUC de 0,7327 > 0,5. Plutot bon
 
 ### Algortihme 2 : Arbre de régression
-- Entrée : Utilisation de caractéristiques numériques
+- Entrée : Utilisation de caractéristiques numériques + character
 - Sorties : Arbre de décision selon des critères
-- Élagage de l'arbre en cherchant le meilleur CP (complexity parameter) possible.
+- Élagage de l'arbre avec CP = 0,02 qui minimise le taux d'erreur
 - Indicateur de fiabilité : AUC de 0,5953 > 0,50. Pas terrible
 
 ### Algortihme 3 : Foret aléatoire
-- Entrée : Utilisation de caractéristiques numériques
+- Entrée : Utilisation de caractéristiques numériques + character 
 - Sorties : Généralisation de plusieurs arbres de regression
-- Choix du nombres d'arbre : minimiser le taux d'érreur
+- Choix du nombres d'arbre : tress = 80 qui minimise le taux d'erreur
 - Indicateur de fiabilité : AUC de 0,6209. Mieux mais toujours pas terrible
 
 
-### Algortihme 4 : Naive Baysien
-- Entrée : Utilisation de caractéristiques numériques
+### Algortihme 4 : Naive Baysien 
+- Entrée : Utilisation de caractéristiques numériques + character
 - Sorties : Prédiction des résultats entre une équipe A et une équipe B
 - Correcteur de Laplace = 1
 - Indicateur de fiabilité : AUC de 0,717 > 0,50. Plutot bon
 
 
 ### Algortihme 5 : KNN
-
-
+- Entrée : Selection des caractéristiques uniquement numériques + Target en numérque (H_Outcome)
+- Sortie : Prédiction des résultats entre une équipe A et une équipe B
+- Centrer et réduire les données pour remettre à l'échelle
+- Choix du nombre de voisins : k = 29 qui représente le plus faible taux d'erreur
+- 
 ### Algortihme 6 : Réseau de neuronnes
 
