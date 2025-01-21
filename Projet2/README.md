@@ -27,7 +27,6 @@ L'objectif principal de ce projet était de répondre de comprendre en profondeu
 ### Problématique 2 : Segmentation des logements en plusieurs catégories 
 
 
-![Robot](https://github.com/user-attachments/assets/5babef01-3182-4432-bdb9-d5550877509d)
 
 ### Compétences Techniques Acquises 
 
