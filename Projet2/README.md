@@ -1,7 +1,7 @@
 # Projet 1 :  Analyse des biens immobilers en Amerique du Nord
 
 ## Introduction
-Dans le cadre de mon master à l'Université Panthéon - Sorbonne, j'ai réalisé un projet de Data Science avec des méthodes de Machine Learning sur des enjeux business concrets dans le secteur de l'immobilier.
+Dans le cadre de mon master à l'Université Panthéon - Sorbonne, j'ai réalisé un projet de Data Science avec des méthodes de Machine Learning sur des enjeux business concrets dans le secteur de l'immobilier. Voir le .ipynb pour plus de détails.
 
 Le dataset qui facilement retrouvable en open source, a été fourni par nos Enseignants-Chercheurs en Sorbonne.
 
