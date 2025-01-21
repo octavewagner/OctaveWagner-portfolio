@@ -49,9 +49,9 @@ Pour le K-Means :
    - Rejet du modèle selon les critères de l'Inertie et de la Silhouette
 
 Pour la CAH : 
-2. - Représentation graphique pour déterminer t, la valeur seuil
-   - Elaboration du modèle
-   - Analyse des 5 clusters qui sont trouvés
+2.     - Représentation graphique pour déterminer t, la valeur seuil
+       - Elaboration du modèle
+       - Analyse des 5 clusters qui sont trouvés
   
 Conclusion : Bien que le K-Means n'a pas pu me permettre de segmenter les biens immobiliers, la CAH a été un choix très pertinent. En effet, j'ai pu avec plus ou moins de précision, classer les biens en 5 catégories différents.
 
