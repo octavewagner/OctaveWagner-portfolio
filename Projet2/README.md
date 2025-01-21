@@ -28,6 +28,8 @@ Pour la régression linéaire :
     - Entrainement du modèle
     - Validation du modèle avec le R2
     - Regression linéaire avec moins de variables
+
+Pour l'arbre de régression :
 2.    - Entrainement
       - Validation avec le R2
 
