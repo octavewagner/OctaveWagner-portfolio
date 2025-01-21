@@ -23,16 +23,16 @@ L'objectif principal de ce projet était de répondre de comprendre en profondeu
 - Utilisation de 2 algorithmes : 1. régression linéaire et 2. Arbre de régression
 
 Pour la régression linéaire : 
-1.  - Transformation des variables type "object" en "numérique"
-    - Normalisation des données pour éviter des ordres de grandeur différents
-    - Entrainement du modèle
-    - Validation du modèle avec le R2
-    - Regression linéaire avec moins de variables
+- Transformation des variables type "object" en "numérique"
+- Normalisation des données pour éviter des ordres de grandeur différents
+- Entrainement du modèle
+- Validation du modèle avec le R2
+- Regression linéaire avec moins de variables
 
 
 Pour l'arbre de régression :
-2.  - Entrainement
-    - Validation avec le R2
+- Entrainement
+- Validation avec le R2
 
 
 Conclusion : La régression linéaire est meilleur pour déterminer le prix des maisons selon leurs caractéristiques. Cependant, le modèle reste pas très fiable. En effet, dans les faits, la relation entre les prix et les caractéristiques est plus complexe. Au moins, nous savons qu'il n'est pas pertinent de garder ces algorithmes.
