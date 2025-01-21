@@ -17,7 +17,7 @@ L'objectif principal de ce projet était de répondre de comprendre en profondeu
 
 ### Collecte et Nettoyage des Données 
 - Import du dataset en .csv
-- Transformation de la colonne pieds carré en m2.
+- Transformation de la colonne pieds carré en m2
 
 ### Problématique 1 : Déterminer le prix des maisons selon leurs caractéristiques
 - Utilisation de 2 algorithmes : 1. régression linéaire et 2. Arbre de régression
