@@ -11,7 +11,7 @@ Ce projet a permis de démontrer mes compétences en nettoyage, manipulation, vi
 L'objectif principal de ce projet était de répondre de comprendre en profondeur le marché de l'immmobilier à travers deux problématiques majeurs :
 
 - Comment déterminer le prix des logements en fonction de leurs caractéristiques ?
-- Comment pouvons-nous segmenter les logements en plusieurs cat&égories ?
+- Comment pouvons-nous segmenter les logements en plusieurs catégories ?
 
 ## Étapes du Projet ⛰️
 
@@ -37,6 +37,17 @@ Conclusion : La régression linéaire est meilleur pour déterminer le prix des 
 
 ### Problématique 2 : Segmentation des logements en plusieurs catégories 
 
+Utilisation de 2 autres algorithmes : 1. K-Means et 2.Classification ascendante hiérarchique (CAH)
+
+Pour le K-Means
+1. - Identification du nombre de clusters avec matplotlib
+   - Rejet du modèle selon les critères de l'Inertie et de la Silhouette
+
+2. - Représentation graphique pour déterminer t, la valeur seuil
+   - Elaboration du modèle
+   - Analyse des 5 clusters qui sont trouvés
+  
+Conclusion : Bien que le K-Means n'a pas pu me permettre de segmenter les biens immobiliers, la CAH a été un choix très pertinent. En effet, j'ai pu avec plus ou moins de précision, classer les biens en 5 catégories différents.
 
 ### Compétences Techniques Acquises 
 
