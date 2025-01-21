@@ -19,7 +19,7 @@ L'objectif principal de ce projet était de répondre de comprendre en profondeu
 - Import du dataset en .csv
 - Transformation de la colonne pieds carré en m2
 
-![BdD immobilier](https://github.com/user-attachments/assets/ee24a487-0488-4cc6-b71f-9f3a7b421)
+![BdD immobilier](https://github.com/user-attachments/assets/ee24a487-0488-4cc6-b71f-9f3a7b42184f)
 
 ### Problématique 1 : Déterminer le prix des maisons selon leurs caractéristiques
 - Utilisation de 2 algorithmes : 1. régression linéaire et 2. Arbre de régression
