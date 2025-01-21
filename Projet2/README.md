@@ -28,14 +28,9 @@ Pour la régression linéaire :
     - Entrainement du modèle
     - Validation du modèle avec le R2
     - Regression linéaire avec moins de variables
-
 Pour l'arbre de régression :
 2.    - Entrainement
       - Validation avec le R2
-
-
-Pour l'arbre de régression, globalement les mêmes étapes :
-
 
 
 Conclusion : La régression linéaire est meilleur pour déterminer le prix des maisons selon leurs caractéristiques. Cependant, le modèle reste pas très fiable. En effet, dans les faits, la relation entre les prix et les caractéristiques est plus complexe. Au moins, nous savons qu'il n'est pas pertinent de garder ces algorithmes.
