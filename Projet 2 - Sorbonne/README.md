@@ -69,7 +69,7 @@ Base de données transformée :
 - Sortie : Prédiction des résultats entre une équipe A et une équipe B
 - Centrer et réduire les données pour remettre à l'échelle
 - Choix du nombre de voisins : k = 29 qui représente le plus faible taux d'erreur
-- - Indicateur de fiabilité : AUC de 0,716 > 0,50. Plutot bon
+- Indicateur de fiabilité : AUC de 0,716 > 0,50. Plutot bon
   
 ### Algorithme 6 : Réseau de neuronnes
 - Entrées : Utilisation de caractéristiques numériques.
