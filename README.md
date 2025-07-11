@@ -30,29 +30,18 @@ Ils portent sur l’analyse de données, la modélisation et la visualisation à
 
 - **Outils :** R (scraping), SQL, DBT, Looker Studio
 
-👉 [Voir le dossier du projet](./Projet Le Wagon)
+👉 [Voir le dossier du projet](./Projet  1 - Le Wagon)
 
 ---
 
-### 2. Analyse de données – Bootcamp Le Wagon
-
-- **Objectif :** Construire un pipeline de données de bout en bout, depuis l’extraction jusqu’à la visualisation finale.
-- **Étapes clés :**  
-  - Collecte et nettoyage des données avec Python et SQL  
-  - Modélisation et transformation via **DBT**  
-  - Visualisation de KPIs sur un **dashboard Power BI** interactif
-- **Outils :** Python, SQL, DBT, Power BI
-
----
-
-### 3. Modèle prédictif – NBA 2021-2022
+### 2. Modèle prédictif – NBA 2021-2022
 
 - **Objectif :** Prédire les probabilités de victoire entre deux équipes NBA via différents modèles de machine learning.
 - **Langage :** R
 
 ---
 
-### 4. Analyse immobilière – États-Unis
+### 3. Analyse immobilière – États-Unis
 
 - **Objectif :** Explorer les dynamiques du marché immobilier américain à travers deux problématiques business.
 - **Langage :** Python
