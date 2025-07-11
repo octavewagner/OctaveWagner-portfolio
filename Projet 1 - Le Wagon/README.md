@@ -10,8 +10,9 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 
 ### Étape 1 – Collecte des données
 
-- Web scraping des statistiques individuelles des joueurs depuis le site **FBref**, référence mondiale en data football, à l’aide du package **`worldfootballR`** (en R)
-- Extraction des valeurs marchandes actualisées des joueurs via un script personnalisé sur **Transfermarkt**
+- Web scraping des **statistiques individuelles des joueurs pour chaque match** depuis le site **FBref**, référence mondiale en data football, à l’aide du package **`worldfootballR`** (en R)
+- Extraction des **valeurs marchandes actualisées** des joueurs via un script personnalisé sur **Transfermarkt**
+
 - Les données couvrent les **5 plus grands championnats européens** :
   - **Premier League** (Angleterre)  
   - **La Liga** (Espagne)  
@@ -19,10 +20,12 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
   - **Bundesliga** (Allemagne)  
   - **Ligue 1** (France)
 
-➡️ Cette base large permet de comparer les profils potentiels issus de différents championnats pour identifier les meilleurs candidats au recrutement.
+➡️ Chaque ligne du dataset correspond à un **joueur pour un match donné**, ce qui permet une analyse fine et dynamique des performances dans le temps.  
+➡️ Cette base large et granulaire permet de comparer les profils potentiels issus de différents championnats pour identifier les meilleurs candidats au recrutement.
 
-![Aperçu du scraping avec R](./img/Web%20Scappring%20R.png)
+![Aperçu du scraping avec R](./img/Web%20Scappring%20R.png)  
 *Exemple de web scraping réalisé avec le package R `worldfootballR`*
+
 
 
 ### Étape 2 – Ingestion & nettoyage des données (DBT et SQL)
