@@ -24,7 +24,6 @@ Ce dépôt regroupe les différents projets d'analyse de données que j'ai réal
 ## 💡 À propos
 Passionné par la **data science** et l'analyse de données, je suis diplômé d'un **Master en Data Marketing à la Sorbonne**. Mon objectif est de résoudre des problèmes concrets grâce aux données et de transformer les insights en décisions stratégiques.
 
+# Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter ! 😊
 ---
 
-# Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter ! 😊
-=======
