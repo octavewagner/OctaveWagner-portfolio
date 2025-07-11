@@ -32,41 +32,57 @@ L’objectif principal était de mieux comprendre le marché immobilier nord-am�
 
 ### 2. Problématique 1 : Estimation du prix des logements
 
-**Méthodes utilisées :**
+#### 📌 Méthodes utilisées
 - Régression Linéaire
 - Arbre de Régression
 
-**Étapes pour la régression linéaire :**
+#### 🔄 Régression Linéaire
 - Encodage des variables catégorielles
 - Normalisation des données
-- Entraînement et évaluation du modèle (score R²)
-- Test avec réduction du nombre de variables
+- Entraînement et évaluation via le **score R²**
+- Réduction du nombre de variables pour optimiser le modèle
 
-**Étapes pour l’arbre de régression :**
-- Entraînement et validation via le R²
+#### 🌳 Arbre de Régression
+- Entraînement du modèle
+- Évaluation de la performance via le **score R²**
 
-**Conclusion :**  
-La **régression linéaire** s'est révélée plus performante que l’arbre de régression. Cependant, les résultats sont globalement peu fiables, suggérant que la relation entre les prix et les caractéristiques est **trop complexe pour ces modèles basiques**.
+#### ✅ Conclusion
+La **régression linéaire** s'est révélée plus performante que l’arbre de régression. Toutefois, les deux modèles montrent des limites : la relation entre les caractéristiques et le prix est **plus complexe que ce qu’ils peuvent modéliser**. Cela souligne la nécessité de modèles plus avancés pour une prédiction fiable.
 
 ---
 
 ### 3. Problématique 2 : Segmentation des logements
 
-**Méthodes utilisées :**
+#### 🔍 Objectif  
+Segmenter les logements en catégories homogènes selon leurs caractéristiques.
+
+#### 🧪 Méthodes explorées
 - K-Means
 - Classification Ascendante Hiérarchique (CAH)
 
-**K-Means :**
-- Détermination du nombre optimal de clusters (méthode du coude + silhouette)
-- Modèle finalement rejeté (faiblesse des critères d'inertie et de silhouette)
+---
 
-**CAH :**
-- Analyse dendrogramme pour définir un seuil pertinent
-- Construction d’un modèle en 5 clusters
-- Interprétation des groupes obtenus
+#### 📌 K-Means
 
-**Conclusion :**  
-Contrairement au K-Means, la **CAH** s’est avérée efficace pour segmenter les biens en **5 catégories distinctes**, avec une bonne lisibilité et pertinence business.
+- Détermination du nombre optimal de clusters via :
+  - **Méthode du coude**
+  - **Score de silhouette**
+- Implémentation avec `scikit-learn`
+- Résultats peu concluants :
+  - Faible inertie inter-cluster
+  - Mauvais score de silhouette
+
+➡️ **Conclusion** : Le K-Means ne permet pas une segmentation suffisamment pertinente dans ce contexte.
+
+---
+
+#### 📌 Classification Ascendante Hiérarchique (CAH)
+
+- Construction d’un **dendrogramme** pour définir un seuil de découpage
+- Application du modèle sur les données
+- Interprétation de **5 clusters distincts**, reflétant des profils de logements cohérents
+
+➡️ **Conclusion** : La **CAH** s’est montrée **robuste, lisible et plus adaptée** pour identifier des segments exploitables dans une logique business.
 
 ---
 
