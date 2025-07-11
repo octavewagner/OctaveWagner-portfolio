@@ -21,6 +21,9 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 
 ➡️ Cette base large permet de comparer les profils potentiels issus de différents championnats pour identifier les meilleurs candidats au recrutement.
 
+![Aperçu du scraping avec R](./img/Web%20Scappring%20R.png)
+*Exemple de web scraping réalisé avec le package R `worldfootballR`*
+
 
 ### Étape 2 – Ingestion & nettoyage des données (DBT et SQL)
 
