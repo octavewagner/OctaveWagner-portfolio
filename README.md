@@ -1,29 +1,29 @@
-# Portfolio de mes projets 👨‍🎓
+# 📊 Portfolio de projets – Data Analytics & Marketing
 
-(Je suis entrain de mettre à jour mon github et mes projets)
+_(Mise à jour en cours de mes projets et de mon GitHub)_
 
-Bienvenue sur mon portfolio ! 🎉
+Bienvenue ! Ce dépôt présente une sélection de projets réalisés durant le **bootcamp Data Analytics du Wagon** et mon **Master en Data Marketing à l’Université Panthéon-Sorbonne**, autour de l’analyse de données en **Python** et **R**.
 
-Ce dépôt regroupe les différents projets d'analyse de données que j'ai réalisés durant mon master en Data Marketing à l'Université Panthéon-Sorbonne. Vous y trouverez des projets finalisés accompagnés de leur code source en **Python** et **R**
+## 🚀 Projets
 
-## 🌟 Projets disponibles
+### 1. Modèle prédictif – NBA 2021-2022
+- **Objectif :** Prédire les probabilités de victoire entre deux équipes NBA via différents modèles de machine learning.
+- **Langage :** R
 
-### Projet 1.Modèle prédictif sur les équipes NBA 21-22
-- **Description :** Ce projet avait pour objectif de prédire les probabilités de succès d'une équipe A face à une équipe B. Dans ce cadre, j'ai développé et comparé plusieurs modèles d'apprentissage automatique. À l’issue de ces analyses, j'ai retenu le modèle le plus performant et conçu un robot interactif pour exploiter ses prédictions.
-- **Langage utilisé :** R
+### 2. Analyse immobilière – États-Unis
+- **Objectif :** Explorer les dynamiques du marché immobilier américain à travers deux problématiques business.
+- **Langage :** Python
 
-### Projet 2. Analyse des biens immobilers aux États Unis
-- **Description :** L'objectif de se projet était de se projeter dans la position d'un agent immobilier. À travers deux questions, j'ai voulu comprendre les enjeux business du secteur de l'immobier aux Etat-Unis. 
-- **Langage utilisé :** Python
+### 🔧 Projets personnels – Données sportives
+- **Objectif :** Analyses basées sur mes données Apple Santé & Strava.
+- **Langages :** R, Python  
+- **Data viz :** Tableau
 
-### Projets Perso. Analyse sur des données de sport
-- **Description :** Travail sur des données issues d'Apple Santé & Strava
-- **Langages utilisés :** R, Python
-- **Outil de data visualisation :** Tableau
+## 👤 À propos
+Formé au **bootcamp Data Analytics du Wagon** et diplômé d’un **Master en Data Marketing**, je suis passionné par la data science et l’analyse appliquée à des problématiques concrètes. Mon objectif : transformer les données en leviers stratégiques.
 
-## 💡 À propos
-Passionné par la **data science** et l'analyse de données, je suis diplômé d'un **Master en Data Marketing à la Sorbonne**. Mon objectif est de résoudre des problèmes concrets grâce aux données et de transformer les insights en décisions stratégiques.
-
-# Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter ! 😊
 ---
+
+📬 **Contactez-moi** si vous avez des questions ou envie de collaborer !
+
 
