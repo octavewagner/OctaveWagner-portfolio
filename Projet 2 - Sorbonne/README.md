@@ -113,11 +113,9 @@ Création d’une **fonction prédictive personnalisée** basée sur la **régre
 
 ## 🧠 Compétences techniques mobilisées
 
-✅ Web scraping avec R  
-✅ Manipulation et transformation des données dans **RStudio**  
+✅ Web scraping, manipulation et transformation avec R  
 ✅ Visualisation avec `ggplot2`  
-✅ Implémentation de plusieurs algorithmes de **classification supervisée**  
-✅ Utilisation des packages `caret`, `dplyr`, `randomForest`, `e1071`, etc.  
+✅ Implémentation de plusieurs algorithmes de **classification supervisée**   
 ✅ Évaluation rigoureuse des modèles via **AUC**  
 ✅ Présentation orale d’un projet technique
 
