@@ -6,7 +6,7 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 
 ---
 
-## 🧠 Démarche (résumée en 4 étapes)
+## 🧠 Démarche (résumée en 5 étapes)
 
 ### Étape 1 – Collecte des données
 
