@@ -8,21 +8,46 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 
 ## 🧠 Démarche (résumée en 4 étapes)
 
-### Étape 1 – Collecte des données avec R
+### Étape 1 – Collecte des données
 
-- Web scraping des statistiques de joueurs via le site **FBref** (référence dans le monde de la data football) en utilisant le package **R `worldfootballR`**
-- Extraction des valeurs marchandes des joueurs via un second script R dédié au site **Transfermarkt** 
+- Web scraping des statistiques individuelles des joueurs depuis le site **FBref**, référence mondiale en data football, à l’aide du package **`worldfootballR`** (en R)
+- Extraction des valeurs marchandes actualisées des joueurs via un script personnalisé sur **Transfermarkt**
+- Les données couvrent les **5 plus grands championnats européens** :
+  - **Premier League** (Angleterre)  
+  - **La Liga** (Espagne)  
+  - **Serie A** (Italie)  
+  - **Bundesliga** (Allemagne)  
+  - **Ligue 1** (France)
+
+➡️ Cette base large permet de comparer les profils potentiels issus de différents championnats pour identifier les meilleurs candidats au recrutement.
+
 
 ### Étape 2 – Ingestion & nettoyage des données (DBT et SQL)
 
 - Import des deux sources de données via **DBT** (Data Build Tool)
 - Nettoyage et structuration initiale pour rendre les données cohérentes et prêtes à être transformées
 
-### Étape 3 – Calcul d’un score prédictif 
 
-- Transformation des données statistiques avec **DBT** pour créer des variables analytiques (ratios, per90, scores)
-- Élaboration d’un **modèle de scoring** permettant de détecter les joueurs les plus performants et prometteurs.
-    
+### Étape 3 – Calcul d’un score prédictif
+
+- Transformation des données statistiques avec **DBT** pour créer des variables analytiques : ratios par 90 minutes (`per90`), statistiques offensives, défensives ou liées à la construction du jeu.
+
+- Élaboration d’un **modèle de scoring personnalisé**, calculé **poste par poste** (milieux, attaquants, défenseurs, gardiens…).
+
+- Pour chaque poste, nous avons suivi la démarche suivante :
+
+  - 🔍 **Identification des statistiques les plus pertinentes** en fonction du poste (ex. : xG pour les attaquants, tacles et interceptions pour les défenseurs)
+  
+  - 📐 **Standardisation des indicateurs** via des ratios `per90` pour lisser les différences de temps de jeu entre les joueurs
+  
+  - ⚖️ **Application de pondérations personnalisées** à chaque statistique, selon son importance relative dans la performance attendue pour le poste
+  
+  - ➕ **Agrégation des scores pondérés** pour produire un score final entre 0 et 100
+  
+  - 🧪 **Vérification de la cohérence du classement** des joueurs par poste (validation manuelle et croisement avec des performances réelles)
+
+➡️ Ce score permet ainsi de comparer objectivement les joueurs d’un même rôle selon des critères adaptés à leur fonction sur le terrain.
+
 
 ### Étape 4 – Jointure entre le score et la valeur marchande
 

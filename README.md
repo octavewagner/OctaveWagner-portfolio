@@ -17,7 +17,7 @@ Ils portent sur l’analyse de données, la modélisation et la visualisation à
 
 ## 🚀 Projets
 
-### 1. 🧠 Scouting intelligent – Como 1907 (football professionnel)
+### 1.Le Wagon - 🧠 Scouting intelligent (football professionnel)
 
 - **Objectif :** Concevoir un outil de scouting data-driven pour aider le club de Serie A **Como 1907** à atteindre la Ligue des Champions.
 - **Contexte :** Projet de groupe sur 2 semaines – formation Le Wagon
@@ -30,7 +30,7 @@ Ils portent sur l’analyse de données, la modélisation et la visualisation à
 
 - **Outils :** R (scraping), SQL, DBT, Looker Studio
 
-👉 [Voir le dossier du projet](./Projet_1_Le_Wagon)
+👉 [Voir le dossier du projet](./Projet%201%20-%20Le%20Wagon)
 
 ---
 
