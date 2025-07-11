@@ -26,5 +26,5 @@ Passionné par la **data science** et l'analyse de données, je suis diplômé d
 
 ---
 
-#Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter ! 😊
+# Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter ! 😊
 =======
