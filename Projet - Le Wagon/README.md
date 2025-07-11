@@ -54,13 +54,13 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 
 ## 📁 Structure du projet
 
-dbt_Projet - Le Wagon /
-├── models/ → Modèles DBT (staging, mart, intermediate)
-├── analyses/ → Analyses exploratoires
-├── seeds/ → Données importées
-├── snapshots/ → Snapshots temporels
-├── macros/ → Fonctions réutilisables
-├── dbt_project.yml → Configuration du projet
-└── README.md → Ce fichier
+- `staging/` → contient les **données brutes scrappées**, importées depuis FBref et Transfermarkt
+
+- `intermediate/` → toutes les étapes de **nettoyage, transformation et modélisation analytique** (ratios, scoring…)
+
+- `mart/` → les **tables finales** prête à être visualisée dans Looker Studio
+
+- `analyses/` → des **analyses SQL complémentaires** pour mieux comprendre les profils et performances des joueurs
+
 
 
