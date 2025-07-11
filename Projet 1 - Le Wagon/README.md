@@ -77,7 +77,7 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 
 
 - 🧮 SQL (nettoyage, transformation et modélisation)
-- 🧱 DBT (modèle analytique modulaire)
+- 🧱 DBT (versioning)
 - 📈 R (web scraping avec worldfootballR)
 - 📊 Looker Studio (visualisation finale)
 - 🐍 Python (les Spider Chart pour le Looker)
