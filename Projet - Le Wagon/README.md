@@ -1,8 +1,8 @@
-# ⚽ Projet DBT – Scouting intelligent pour le Como 1907
+# ⚽ Scouting intelligent pour le Como 1907 (football professionnel)
 
 📊 Projet de groupe de 2 semaines réalisé dans le cadre de la formation **Data Analytics du Wagon**.
 
-Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907** (10ᵉ de Serie A en 2024-2025) avec l’objectif de concevoir un **outil de scouting intelligent** pour accompagner le club dans son ambition d’atteindre la **Ligue des Champions** (top 4 de Série A).
+Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**, club de **football professionnel** (10ᵉ de Serie A en 2024-2025), avec l’objectif de concevoir un **outil de scouting intelligent** pour accompagner le club dans son ambition d’atteindre la **Ligue des Champions** l'année prochaine (top 4 de Série A).
 
 ---
 
