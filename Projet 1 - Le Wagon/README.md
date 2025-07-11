@@ -93,3 +93,6 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 - `mart/` → les **tables finales** prête à être visualisée dans Looker Studio
 
 - `analyses/` → des **analyses SQL complémentaires** pour mieux comprendre les profils et performances des joueurs
+
+- `Scripts_R/` → contient des exemples de script R pour le scrapping
+
