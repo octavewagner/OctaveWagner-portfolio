@@ -48,7 +48,7 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
   - ➕ **Agrégation des scores pondérés** pour produire un score final entre 0 et 100
   - 🧪 **Vérification de la cohérence du classement** des joueurs par poste (validation manuelle et croisement avec des performances réelles)
 
-➡️ Ce score permet ainsi de comparer objectivement les joueurs d’un même rôle selon des critères adaptés à leur fonction sur le terrain.
+➡️ Ce score permet très facilement de comparer les différents joueurs
 
 ![Exemple de joueur avec un score très élevé](./img/Score_99.png)
 *Visualisation des joueurs avec leur score associé (extrait de DBT)*
