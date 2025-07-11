@@ -61,11 +61,14 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 ### Étape 5 – Visualisation finale & recommandations (Looker Studio)
 
 - Création d’un dashboard dynamique avec **Looker Studio**
-- Présentation du **contexte club**, analyse des performances actuelles de l’équipe et identification des bessoins
+- Présentation du **contexte club**, analyse des performances actuelles de l’équipe et identification des manques
 - **Exploration interactive des joueurs** selon leur poste, leur score prédictif et leur valeur marchande
-- Visualisation des performances à l’aide de **spider charts comparant chaque joueur cible au joueur recommandé**
+- Visualisation des performances à l’aide de **spider charts** comparant chaque joueur analysé au **profil recommandé**
 - Formulation de **recommandations concrètes de recrutement** par poste clé
 - **Conclusion : projection de la future équipe type** intégrant les recrues identifiées
+
+![Matrice de sélection finale](./img/Matrice%20de%20selection.png)
+*Matrice de sélection permettant de filtrer les profils selon les critères définis*
 
 ---
 
