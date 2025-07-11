@@ -1,11 +1,18 @@
-# Projet 1 : Modèle prédictif en NBA sur la saison 21-22 🏀
+# 🏀 Projet 1 : Modèle prédictif en NBA sur la saison 21-22
 
-## Introduction
-Dans le cadre de mon master à l'Université Panthéon - Sorbonne, j'ai réalisé un projet complet de Machine Learning visant à prédire le pourcentage de victoire d'une équipe NBA versus une autre, toute conférence confondue. Voir le PDF pour plus de détails
+## 📚 Introduction
 
-Les données sont issus d'un site spécialisé en data analyse : Predictive Hacks.
+Dans le cadre de mon master à l'Université Panthéon - Sorbonne, j'ai réalisé un projet complet de **Machine Learning en R**, visant à prédire le pourcentage de victoire d'une équipe NBA contre une autre, toutes conférences confondues.
 
-Ce projet a été conçu pour démontrer mes compétences en collecte de données (web scrapping), structuration des données et modélisation prédictive.
+📄 Voir le PDF joint pour plus de détails.
+
+Les données proviennent du site spécialisé **Predictive Hacks**, et ont été collectées via du **web scraping**.
+
+Ce projet m’a permis de démontrer mes compétences en :
+- collecte de données automatisée,
+- structuration et préparation des jeux de données,
+- modélisation prédictive avec **R** (notamment avec les packages `tidyverse`, `caret`, `randomForest`, etc.).
+
 
 ## Objectif 🎯
 L'objectif principal de ce projet était de construire l'un des meilleurs modèles prédictifs possibles. 
