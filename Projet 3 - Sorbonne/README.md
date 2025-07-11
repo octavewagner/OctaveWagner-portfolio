@@ -1,68 +1,101 @@
-# Projet 1 :  Analyse des biens immobilers en Amerique du Nord
+# 🏡 Projet 1 : Analyse des biens immobiliers en Amérique du Nord
 
-## Introduction
-Dans le cadre de mon master à l'Université Panthéon - Sorbonne, j'ai réalisé un projet de Data Science avec des méthodes de Machine Learning sur des enjeux business concrets dans le secteur de l'immobilier. Voir le .ipynb pour plus de détails.
+## 📚 Contexte
 
-Le dataset qui facilement retrouvable en open source, a été fourni par nos Enseignants-Chercheurs en Sorbonne.
+Dans le cadre de mon master à l'Université Panthéon-Sorbonne, j'ai mené un projet de Data Science appliqué au secteur immobilier, en utilisant des méthodes de **Machine Learning** pour répondre à des enjeux business concrets.
 
-Ce projet a permis de démontrer mes compétences en nettoyage, manipulation, visualisation et modélisation prédictive des données en Python.
+Les données, issues d’une source open source, nous ont été fournies par nos enseignants-chercheurs. Le projet a été réalisé en **Python** sur **Jupyter Notebook** (voir le fichier `.ipynb` pour plus de détails).
 
-## Objectif 🎯
-L'objectif principal de ce projet était de répondre de comprendre en profondeur le marché de l'immmobilier à travers deux problématiques majeurs :
+Ce projet m’a permis de démontrer mes compétences en **nettoyage**, **manipulation**, **visualisation** et **modélisation prédictive** des données.
 
-- Comment déterminer le prix des logements en fonction de leurs caractéristiques ?
-- Comment pouvons-nous segmenter les logements en plusieurs catégories ?
+---
 
-## Étapes du Projet ⛰️
+## 🎯 Objectifs
 
-### Collecte et Nettoyage des Données 
-- Import du dataset en .csv
-- Transformation de la colonne pieds carré en m2
+L’objectif principal était de mieux comprendre le marché immobilier nord-américain à travers deux grandes problématiques :
 
-![BdD immobilier](https://github.com/user-attachments/assets/ee24a487-0488-4cc6-b71f-9f3a7b42184f)
+- **Comment déterminer le prix des logements à partir de leurs caractéristiques ?**
+- **Comment segmenter les logements en différentes catégories pertinentes ?**
 
-### Problématique 1 : Déterminer le prix des maisons selon leurs caractéristiques
-- Utilisation de 2 algorithmes : 1. régression linéaire et 2. Arbre de régression
+---
 
-Pour la régression linéaire : 
-- Transformation des variables type "object" en "numérique"
-- Normalisation des données pour éviter des ordres de grandeur différents
-- Entrainement du modèle
-- Validation du modèle avec le R2
-- Regression linéaire avec moins de variables
+## 🛠️ Étapes du Projet
 
+### 1. Collecte et préparation des données
+- Chargement du dataset au format `.csv`
+- Conversion des surfaces de **pieds carrés vers mètres carrés**
+- Préparation des variables pour la modélisation
 
-Pour l'arbre de régression :
-- Entrainement
-- Validation avec le R2
+![Base de données immobilière](https://github.com/user-attachments/assets/ee24a487-0488-4cc6-b71f-9f3a7b42184f)
 
+---
 
-Conclusion : La régression linéaire est meilleur pour déterminer le prix des maisons selon leurs caractéristiques. Cependant, le modèle reste pas très fiable. En effet, dans les faits, la relation entre les prix et les caractéristiques est plus complexe. Au moins, nous savons qu'il n'est pas pertinent de garder ces algorithmes.
+### 2. Problématique 1 : Estimation du prix des logements
 
-### Problématique 2 : Segmentation des logements en plusieurs catégories 
+#### 📌 Méthodes utilisées
+- Régression Linéaire
+- Arbre de Régression
 
-Utilisation de 2 autres algorithmes : 1. K-Means et 2.Classification ascendante hiérarchique (CAH)
+#### 🔄 Régression Linéaire
+- Encodage des variables catégorielles
+- Normalisation des données
+- Entraînement et évaluation via le **score R²**
+- Réduction du nombre de variables pour optimiser le modèle
 
-Pour le K-Means : 
-- Identification du nombre de clusters avec matplotlib
-- Rejet du modèle selon les critères de l'Inertie et de la Silhouette
+#### 🌳 Arbre de Régression
+- Entraînement du modèle
+- Évaluation de la performance via le **score R²**
 
-Pour la CAH : 
-- Représentation graphique pour déterminer t, la valeur seuil
-- Elaboration du modèle
-- Analyse des 5 clusters qui sont trouvés
-  
-Conclusion : Bien que le K-Means n'a pas pu me permettre de segmenter les biens immobiliers, la CAH a été un choix très pertinent. En effet, j'ai pu avec plus ou moins de précision, classer les biens en 5 catégories différents.
+#### ✅ Conclusion
+La **régression linéaire** s'est révélée plus performante que l’arbre de régression. Toutefois, les deux modèles montrent des limites : la relation entre les caractéristiques et le prix est **plus complexe que ce qu’ils peuvent modéliser**. Cela souligne la nécessité de modèles plus avancés pour une prédiction fiable.
 
-### Compétences Techniques Acquises 
+---
 
-✅ Stockage et manipulation des données avec Python dans l'IDE JupyterNotebook
+### 3. Problématique 2 : Segmentation des logements
 
-✅ Visualisation de données avec matplotlib
+#### 🔍 Objectif  
+Segmenter les logements en catégories homogènes selon leurs caractéristiques.
 
-✅ Connaissances des différents algorithmes en Machine Learning avec sklearn.
+#### 🧪 Méthodes explorées
+- K-Means
+- Classification Ascendante Hiérarchique (CAH)
 
-✅ Évaluation et interprétation des modèles.
+---
 
-### Conclusion 📊
-Ce projet illustre ma capacité à gérer un projet de Machine Learning en intégrant une vision stratégique business et une expertise technique.
+#### 📌 K-Means
+
+- Détermination du nombre optimal de clusters via :
+  - **Méthode du coude**
+  - **Score de silhouette**
+- Implémentation avec `scikit-learn`
+- Résultats peu concluants :
+  - Faible inertie inter-cluster
+  - Mauvais score de silhouette
+
+➡️ **Conclusion** : Le K-Means ne permet pas une segmentation suffisamment pertinente dans ce contexte.
+
+---
+
+#### 📌 Classification Ascendante Hiérarchique (CAH)
+
+- Construction d’un **dendrogramme** pour définir un seuil de découpage
+- Application du modèle sur les données
+- Interprétation de **5 clusters distincts**, reflétant des profils de logements cohérents
+
+➡️ **Conclusion** : La **CAH** s’est montrée **robuste, lisible et plus adaptée** pour identifier des segments exploitables dans une logique business.
+
+---
+
+## 🧠 Compétences techniques mobilisées
+
+✅ Manipulation de données avec **pandas**  
+✅ Visualisation avec **matplotlib**  
+✅ Implémentation d’algorithmes de Machine Learning avec **scikit-learn**  
+✅ Évaluation et interprétation de modèles prédictifs et non supervisés  
+✅ Structuration d’une démarche analytique dans un cadre professionnel
+
+---
+
+## 📊 Conclusion
+
+Ce projet illustre ma capacité à **conduire un projet de Machine Learning** de bout en bout, en combinant une approche **technique rigoureuse** et une **compréhension stratégique** des enjeux métiers.

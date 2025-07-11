@@ -1,104 +1,131 @@
-# Projet 1 : Modèle prédictif en NBA sur la saison 21-22 🏀
+# 🏀 Projet 1 : Modèle prédictif en NBA — Saison 2021-2022
 
-## Introduction
-Dans le cadre de mon master à l'Université Panthéon - Sorbonne, j'ai réalisé un projet complet de Machine Learning visant à prédire le pourcentage de victoire d'une équipe NBA versus une autre, toute conférence confondue. Voir le PDF pour plus de détails
+## 📚 Introduction
 
-Les données sont issus d'un site spécialisé en data analyse : Predictive Hacks.
+Dans le cadre de mon master à l'Université Panthéon-Sorbonne, j'ai réalisé un projet complet de **Machine Learning en R**, visant à prédire le **pourcentage de victoire d'une équipe NBA contre une autre**, toutes conférences confondues.
 
-Ce projet a été conçu pour démontrer mes compétences en collecte de données (web scrapping), structuration des données et modélisation prédictive.
+📄 Voir le PDF joint pour plus de détails.
 
-## Objectif 🎯
-L'objectif principal de ce projet était de construire l'un des meilleurs modèles prédictifs possibles. 
-J'ai comparé 6 algorithmes différents sur la base d'un indicateur de fiabilité : 
+Les données proviennent du site spécialisé **Predictive Hacks** et ont été collectées via du **web scraping**.
 
+Ce projet m’a permis de mettre en œuvre mes compétences en :
+- collecte automatisée de données (web scraping),
+- transformation et structuration des jeux de données,
+- modélisation prédictive avec **R** (`tidyverse`, `caret`, `randomForest`, etc.).
+
+---
+
+## 🎯 Objectif
+
+Construire un modèle capable de prédire l’issue d’un match NBA à partir de statistiques régulières.  
+Pour cela, j’ai comparé **6 algorithmes différents** sur la base d’un **indicateur de fiabilité commun : l’AUC (Area Under Curve)**.
+
+Modèles testés :
 - Régression logistique
 - Arbre de régression
-- Fôret aléatoire
-- Naive Baysien
-- KNN
+- Forêt aléatoire
+- Naïf Bayesien
+- K plus proches voisins (KNN)
 - Réseau de neurones
 
-La construction du modèle s'est faite sur les différentes statistiques sur une saison régulière comme le taux de victoire, le taux de victoire à domicile et bien d'autres. 
+Les prédictions reposent sur des statistiques agrégées par équipe : taux de victoire global, taux de victoire à domicile/extérieur, etc.
 
-## Étapes du Projet ⛰️
+---
 
-### Collecte de Données 
-- Collecte des données en utilisant le tuto suivant : https://predictivehacks.com/how-to-build-a-predictive-model-for-nba-games/
-1. Web scrapping sur le site de la ESPN des scores NBA avec leurs statistiques (points, rebonds, assitances)
-2. Transformation des données en indicateurs pertinents (taux de victoire...)
-3. Selection des variables nécessaires et utiles pour un modèle de Machine Learning
+## ⛰️ Étapes du Projet
 
-Base de données initiale : 
+### 📥 1. Collecte des données
+
+- Suivi du tutoriel suivant : https://predictivehacks.com/how-to-build-a-predictive-model-for-nba-games/
+1. **Web scraping** sur ESPN : récupération des scores et statistiques NBA (points, rebonds, passes...)
+2. Transformation des données brutes en **indicateurs clés**
+3. Sélection des variables pertinentes pour la modélisation
+
+📊 Base de données initiale :  
 ![BdD NBA](https://github.com/user-attachments/assets/0c61a28e-bc65-4d91-9003-df157d5c9d9f)
 
-Base de données transformée : 
+📈 Base de données transformée :  
 ![BdD NBA final](https://github.com/user-attachments/assets/ff0ac821-9434-47db-818c-d8ee21c2b4dc)
 
-### Stockage et Nettoyage des Données
-- Stockage et structuration des données dans l'IDE Rstudio. Chaque algorithme a des besoins spéciques en entrée.
+---
 
-### Algortihme 1 : Logit
+### 🧹 2. Nettoyage & stockage des données
 
-- Entrées : Utilisation de caractéristiques numériques. Transformation automatiques des variables "character" avec la fonction glm()
-- Sorties : Prédiction des résultats entre une équipe A et une équipe B
-- Simplification du modèle avec la fonction step()
-- Indicateur de fiabilité : AUC de 0,7327 > 0,5. Plutot bon
+- Stockage et manipulation via **RStudio**
+- Adaptation des formats de variables selon les exigences des algorithmes
+- Encodage des variables catégorielles et standardisation lorsque nécessaire
 
-### Algorithme 2 : Arbre de régression
-- Entrée : Utilisation de caractéristiques numériques + character
-- Sorties : Arbre de décision selon des critères
-- Élagage de l'arbre avec CP = 0,02 qui minimise le taux d'erreur
-- Indicateur de fiabilité : AUC de 0,5953 > 0,50. Pas terrible
+---
 
-### Algorithme 3 : Foret aléatoire
-- Entrée : Utilisation de caractéristiques numériques + character 
-- Sorties : Généralisation de plusieurs arbres de regression
-- Choix du nombres d'arbre : trees = 80 qui minimise le taux d'erreur
-- Indicateur de fiabilité : AUC de 0,6209. Mieux mais toujours pas terrible
+## ⚙️ 3. Comparaison des algorithmes
 
+### 🔢 Régression logistique (Logit)
+- Traitement automatique des variables `character` via `glm()`
+- Réduction du modèle avec `step()`
+- **AUC = 0,7327** ✅ → Modèle performant
 
-### Algorithme 4 : Naive Baysien 
-- Entrée : Utilisation de caractéristiques numériques + character
-- Sorties : Prédiction des résultats entre une équipe A et une équipe B
-- Correcteur de Laplace = 1
-- Indicateur de fiabilité : AUC de 0,717 > 0,50. Plutot bon
+---
 
+### 🌳 Arbre de régression (Decision Tree)
+- Construction d’un arbre de décision
+- Élagage avec `cp = 0,02` (minimisation de l'erreur)
+- **AUC = 0,5953** ❌ → Faible performance
 
-### Algorithme 5 : KNN
-- Entrée : Selection des caractéristiques uniquement numériques + Target en numérque (H_Outcome)
-- Sortie : Prédiction des résultats entre une équipe A et une équipe B
-- Centrer et réduire les données pour remettre à l'échelle
-- Choix du nombre de voisins : k = 29 qui représente le plus faible taux d'erreur
-- - Indicateur de fiabilité : AUC de 0,716 > 0,50. Plutot bon
-  
-### Algorithme 6 : Réseau de neuronnes
-- Entrées : Utilisation de caractéristiques numériques.
-- Couche cachée = 1
-- Sortie : Prédiction des résultats entre une équipe A et une équipe B
-- Indicateur de fiabilité : AUC de 0,6671 > 0,50. Moyen
+---
 
-### Le Robot prédictif
-- Construction d'une fonction prédictive avec le logit comme algorithme (meilleur AUC)
-- Sélection d'une équipe et d'une équipe adversaire
-- Estimation du pourcentage de succès de l'équipe hote
+### 🌲 Forêt aléatoire (Random Forest)
+- Agrégation de plusieurs arbres de décision
+- Optimisation avec `trees = 80`
+- **AUC = 0,6209** ❌ → Résultats modestes
+
+---
+
+### 🧮 Naïf Bayesien
+- Application d’un correcteur de Laplace (`laplace = 1`)
+- **AUC = 0,717** ✅ → Bon niveau de performance
+
+---
+
+### 👥 K-Nearest Neighbors (KNN)
+- Données centrées et réduites
+- Meilleur score obtenu avec `k = 29`
+- **AUC = 0,716** ✅ → Prédictions pertinentes
+
+---
+
+### 🧠 Réseau de neurones (Neural Network)
+- 1 couche cachée
+- Entraînement sur caractéristiques numériques uniquement
+- **AUC = 0,6671** ⚠️ → Moyennement concluant
+
+---
+
+## 🤖 4. Le robot prédictif
+
+Création d’une **fonction prédictive personnalisée** basée sur la **régression logistique**, le modèle le plus performant :
+
+- Saisie de deux équipes NBA (équipe hôte et adversaire)
+- Estimation du **pourcentage de victoire de l’équipe hôte**
 
 ![Robot](https://github.com/user-attachments/assets/5babef01-3182-4432-bdb9-d5550877509d)
 
-### Compétences Techniques Acquises 
+---
 
-✅ Collecte de données à partir d'un site internet (WebScrapping).
+## 🧠 Compétences techniques mobilisées
 
-✅ Stockage et manipulation des données avec R dans l'IDE RStudio
+✅ Web scraping, manipulation et transformation avec R  
+✅ Visualisation avec `ggplot2`  
+✅ Implémentation de plusieurs algorithmes de **classification supervisée**   
+✅ Évaluation rigoureuse des modèles via **AUC**  
+✅ Présentation orale d’un projet technique
 
-✅ Visualisation de données avec ggplot2
+---
 
-✅ Connaissances des différents algorithmes en Machine Learning
+## 📊 Conclusion
 
-✅ Évaluation et interprétation des modèles sorties algorithmes
+Ce projet démontre ma capacité à :
+- mener une **analyse prédictive de bout en bout**,
+- sélectionner et comparer différents modèles selon un indicateur de performance pertinent,
+- **exploiter les outils R** pour la collecte, le traitement et la modélisation de données.
 
-✅ Présentation du projet devant une audience
-
-### Conclusion 📊
-Ce projet démontre ma capacité à gérer un projet de Machine Learning, depuis la collecte des données jusqu'à sa mise en pratique. 
-Mes compétences techniques en collecte, manipulation de données et modélisation prédictive sont utilisés à travers les différents étape de ce projet.
-
+C’est un bel exemple d’application de la data science à un univers aussi riche que celui de la NBA.

@@ -59,4 +59,4 @@ Ils portent sur l’analyse de données, la modélisation et la visualisation à
 ## 👤 À propos
 
 Formé au **bootcamp Data Analytics du Wagon** et diplômé d’un **Master en Data Marketing**, je suis passionné par la data science appliquée aux problématiques concrètes.  
-Mon objectif : **transformer les données en leviers de décision**, notamment dans le domaine du sport, de l’impact environnemental ou du produit.
+Mon objectif : **transformer les données en leviers de décision**, notamment dans le domaine du sport ou de l’impact environnemental.

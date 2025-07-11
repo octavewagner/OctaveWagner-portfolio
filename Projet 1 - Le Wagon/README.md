@@ -6,12 +6,13 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 
 ---
 
-## 🧠 Démarche (résumée en 4 étapes)
+## 🧠 Démarche (résumée en 5 étapes)
 
 ### Étape 1 – Collecte des données
 
-- Web scraping des statistiques individuelles des joueurs depuis le site **FBref**, référence mondiale en data football, à l’aide du package **`worldfootballR`** (en R)
-- Extraction des valeurs marchandes actualisées des joueurs via un script personnalisé sur **Transfermarkt**
+- Web scraping des **statistiques individuelles des joueurs pour chaque match** depuis le site **FBref**, référence mondiale en data football, à l’aide du package **`worldfootballR`** (en R)
+- Extraction des **valeurs marchandes actualisées** des joueurs via un script personnalisé sur **Transfermarkt**
+
 - Les données couvrent les **5 plus grands championnats européens** :
   - **Premier League** (Angleterre)  
   - **La Liga** (Espagne)  
@@ -19,7 +20,12 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
   - **Bundesliga** (Allemagne)  
   - **Ligue 1** (France)
 
-➡️ Cette base large permet de comparer les profils potentiels issus de différents championnats pour identifier les meilleurs candidats au recrutement.
+➡️ Chaque ligne du dataset correspond à un **joueur pour un match donné**, ce qui permet une analyse fine et dynamique des performances dans le temps.  
+➡️ Cette base large et granulaire permet de comparer les profils potentiels issus de différents championnats pour identifier les meilleurs candidats au recrutement.
+
+![Aperçu du scraping avec R](./img/Web%20Scappring%20R.png)  
+*Exemple de web scraping réalisé avec le package R `worldfootballR`*
+
 
 
 ### Étape 2 – Ingestion & nettoyage des données (DBT et SQL)
@@ -37,17 +43,15 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 - Pour chaque poste, nous avons suivi la démarche suivante :
 
   - 🔍 **Identification des statistiques les plus pertinentes** en fonction du poste (ex. : xG pour les attaquants, tacles et interceptions pour les défenseurs)
-  
   - 📐 **Standardisation des indicateurs** via des ratios `per90` pour lisser les différences de temps de jeu entre les joueurs
-  
   - ⚖️ **Application de pondérations personnalisées** à chaque statistique, selon son importance relative dans la performance attendue pour le poste
-  
   - ➕ **Agrégation des scores pondérés** pour produire un score final entre 0 et 100
-  
   - 🧪 **Vérification de la cohérence du classement** des joueurs par poste (validation manuelle et croisement avec des performances réelles)
 
-➡️ Ce score permet ainsi de comparer objectivement les joueurs d’un même rôle selon des critères adaptés à leur fonction sur le terrain.
+➡️ Ce score permet très facilement de comparer les différents joueurs
 
+![Exemple de joueur avec un score très élevé](./img/Score_99.png)
+*Visualisation des joueurs avec leur score associé (extrait de DBT)*
 
 ### Étape 4 – Jointure entre le score et la valeur marchande
 
@@ -57,11 +61,14 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 ### Étape 5 – Visualisation finale & recommandations (Looker Studio)
 
 - Création d’un dashboard dynamique avec **Looker Studio**
-- Présentation du **contexte club**, analyse des performances actuelles de l’équipe et identification des bessoins
+- Présentation du **contexte club**, analyse des performances actuelles de l’équipe et identification des manques
 - **Exploration interactive des joueurs** selon leur poste, leur score prédictif et leur valeur marchande
-- Visualisation des performances à l’aide de **spider charts comparant chaque joueur cible au joueur recommandé**
+- Visualisation des performances à l’aide de **spider charts** comparant chaque joueur analysé au **profil recommandé**
 - Formulation de **recommandations concrètes de recrutement** par poste clé
 - **Conclusion : projection de la future équipe type** intégrant les recrues identifiées
+
+![Matrice de sélection finale](./img/Matrice%20de%20selection.png)
+*Matrice de sélection permettant de filtrer les profils selon les critères définis*
 
 ---
 
@@ -86,3 +93,6 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 - `mart/` → les **tables finales** prête à être visualisée dans Looker Studio
 
 - `analyses/` → des **analyses SQL complémentaires** pour mieux comprendre les profils et performances des joueurs
+
+- `Scripts_R/` → contient des exemples de script R pour le scrapping
+
