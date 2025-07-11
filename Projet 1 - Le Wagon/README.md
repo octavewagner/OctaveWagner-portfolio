@@ -43,17 +43,15 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 - Pour chaque poste, nous avons suivi la démarche suivante :
 
   - 🔍 **Identification des statistiques les plus pertinentes** en fonction du poste (ex. : xG pour les attaquants, tacles et interceptions pour les défenseurs)
-  
   - 📐 **Standardisation des indicateurs** via des ratios `per90` pour lisser les différences de temps de jeu entre les joueurs
-  
   - ⚖️ **Application de pondérations personnalisées** à chaque statistique, selon son importance relative dans la performance attendue pour le poste
-  
   - ➕ **Agrégation des scores pondérés** pour produire un score final entre 0 et 100
-  
   - 🧪 **Vérification de la cohérence du classement** des joueurs par poste (validation manuelle et croisement avec des performances réelles)
 
 ➡️ Ce score permet ainsi de comparer objectivement les joueurs d’un même rôle selon des critères adaptés à leur fonction sur le terrain.
 
+![Exemple de joueur avec un score très élevé](./img/Score_99.png)
+*Visualisation des joueurs avec leur score associé (extrait de DBT)*
 
 ### Étape 4 – Jointure entre le score et la valeur marchande
 
