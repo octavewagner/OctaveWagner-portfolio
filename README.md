@@ -30,7 +30,7 @@ Ils portent sur l’analyse de données, la modélisation et la visualisation à
 
 - **Outils :** R (scraping), SQL, DBT, Looker Studio
 
-👉 [Voir le dossier du projet](./dbt_league_1)
+👉 [Voir le dossier du projet](./Projet Le Wagon)
 
 ---
 
