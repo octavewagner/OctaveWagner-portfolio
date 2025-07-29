@@ -86,6 +86,10 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 
 ## 📁 Structure du projet
 
+ - `Scripts_R/` → contient des exemples de script R pour le scrapping
+
+Dans models : 
+
 - `staging/` → contient les **données brutes scrappées**, importées depuis FBref et Transfermarkt
 
 - `intermediate/` → toutes les étapes de **nettoyage, transformation et modélisation analytique** (ratios, scoring…)
@@ -94,5 +98,4 @@ Nous nous sommes positionnés en tant qu’équipe data analyst du **Como 1907**
 
 - `analyses/` → des **analyses SQL complémentaires** pour mieux comprendre les profils et performances des joueurs
 
-- `Scripts_R/` → contient des exemples de script R pour le scrapping
 
